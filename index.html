@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html{
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: rgb(171, 199, 207);
+        }
+
+        .sec1 {
+            margin-left: 500px;
+        }
+
+        .navbar .logo {
+            font-size: 40px;
+            font-weight: 500px;
+            color: rgb(70, 175, 79);
+        }
+
+        .navbar .logo span {
+            color: rgb(14, 50, 150);
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 80px;
+            background: crimson;
+        }
+
+        .navbar ul li {
+            display: inline-block;
+            margin-left: 20px;
+            font-weight: 600px;
+            font-size: 30px;
+            border-radius: 10px;
+
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            cursor: pointer;
+            color: rgb(14, 237, 245);
+        }
+
+        .navbar ul li a:hover {
+            background: rgb(230, 197, 14);
+            border-radius: 8px;
+        }
+
+        .Home {
+            margin-left: 200px;
+            margin-top: 150px;
+            display: flex;
+        }
+
+        .Home span {
+            font-weight: 700px;
+            color: crimson;
+
+        }
+
+        .Home p {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: rgb(178, 10, 201);
+            font-size: 50px;
+        }
+
+        .Home h3 {
+            font-size: 40px;
+            font-weight: 700px;
+        }
+
+        .Home h1 {
+            font-size: 50px;
+        }
+
+        .Home .logo1 img {
+            width: 400px;
+            height: 500px;
+            margin-left: 100px;
+        }
+
+        .Home1 {
+            margin-top: 200px;
+        }
+
+        .About h3 span {
+            font-size: 60px;
+            font-weight: 700px;
+            color: black;
+        }
+
+        .About1 h3 {
+            color: yellow;
+            font-size: 60px;
+            font-weight: 700px;
+        }
+
+        .About h1 {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: yellow;
+        }
+
+        .About1 {
+            margin-left: 140px;
+            margin-top: 300px;
+
+        }
+
+        .About {
+            margin-top: 230px;
+            display: flex;
+        }
+
+        .About .sec2 span {
+            margin-right: 20px;
+        }
+
+        .About .sec2 {
+            font-size: 60px;
+            font-weight: 700px;
+            margin-left: 500px;
+        }
+
+        .About h1 span {
+            color: black;
+        }
+
+        .btn {
+            width: 300px;
+            height: 40px;
+            background-color: rgb(227, 241, 145);
+            margin-top: 30px;
+            border-radius: 20px;
+
+        }
+
+        .experience {
+            margin-left: 150px;
+            margin-top: 130px;
+        }
+
+        .experience .box span {
+            font-size: 40px;
+            font-weight: 600px;
+            color: white;
+        }
+
+        .experience .box h3 {
+            color: yellow;
+            font-size: 40px;
+            font-weight: 600px;
+        }
+
+        .About .experience .box {
+            flex: 1 1 48rem;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .About .experience .box {
+            width: 20rem;
+            background: #222;
+            text-align: center;
+            padding: 2rem;
+            margin: 2rem;
+        }
+
+        .Education .sec4 {
+            color: yellow;
+            font-size: 80px;
+            font-weight: 700px;
+            margin-left: 500px;
+            margin-top: 350px;
+
+        }
+
+        .Education .sec3 {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 1rem 0;
+        }
+
+        .Education .sec3 .box {
+            width: 27rem;
+            margin: 4rem 1rem;
+            position: relative;
+        }
+
+        .Education .sec3 .box span {
+            font-size: 1.3rem;
+            background: #222;
+            color: #fff;
+            border-radius: 5rem;
+            padding: .5rem 2.5rem;
+            margin-left: 90px;
+        }
+
+        .Education .sec3 .box p {
+            font-size: 1.4rem;
+            color: rgb(10, 10, 10);
+            padding: 1rem 0;
+            margin-top: 10px;
+        }
+
+        .Skills .sec5 {
+            border: 2px solid yellow;
+            display: inline-block;
+            font-size: 50px;
+            font-weight: 600px;
+            width: 30%;
+            margin-left: 20px;
+            margin-bottom: 30px;
+            border-radius: 20px;
+            text-align: center;
+            background: yellow;
+            color: black;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+        }
+
+        .Skills .sec6 {
+            border: 2px solid yellow;
+            display: inline-block;
+            font-size: 50px;
+            font-weight: 600px;
+            width: 30%;
+            margin-left: 20px;
+            border-radius: 20px;
+            text-align: center;
+            background: yellow;
+            color: black;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .Skills h3 {
+            display: flex;
+            font-size: 60px;
+            font-weight: 700px;
+            margin-bottom: 50px;
+            color: yellow;
+            margin-left: 550px;
+            margin-top: 100px;
+        }
+
+        .contact .row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .contact .row .content {
+            flex: 1 1 30rem;
+            padding: 4rem;
+            padding-bottom: 0;
+        }
+
+        .contact .row form {
+            flex: 1 1 45rem;
+            padding: 2rem;
+            margin: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .contact .row form .box {
+            padding: 1.5rem;
+            margin: 1rem 0;
+            background: #3333;
+            color: rgb(133, 28, 115);
+            text-transform: none;
+            font-size: 1.7rem;
+            width: 100%;
+        }
+
+        .contact .row form .box::placeholder {
+            text-transform: capitalize;
+            color: black;
+        }
+
+        .contact .row form .message {
+            height: 10rem;
+            resize: none;
+
+        }
+
+        .contact .row .content .title {
+            text-transform: uppercase;
+            color: rgb(145, 54, 54);
+            font-size: 3rem;
+            padding-bottom: 2rem;
+        }
+
+        .contact .row .content .info h3 {
+            display: flex;
+            align-items: center;
+            font-size: 2rem;
+            color: #eee;
+            padding: 1rem 0;
+            font-weight: normal;
+        }
+
+        .contact .row .content .info h3 i {
+            padding-right: 1rem;
+            color: var(--yellow);
+        }
+
+        .contact .heading {
+            font-size: 60px;
+            font-weight: 600px;
+            font-family: sans-serif;
+            margin-left: 600px;
+            margin-top: 200px;
+            color: yellow;
+        }
+
+        .contact .row .content .info h3 i {
+            padding-right: 1rem;
+            color: var(--yellow);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Portfo.<span>lio</span>
+            </div>
+            <ul class="sec1">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Home section-->
+    <section class="Home" id="home">
+        <div class="Home1">
+            <h3>HI THERE !</h3>
+            <h1>I'M <span>JAGRIT SAHU</span></h1>
+            <p>And i am a web developer</p>
+        </div>
+        <div class="logo1"><img src="https://www.linkpicture.com/q/FB_IMG_16296476117477964.jpg" alt="Not loading">
+        </div>
+    </section>
+
+    <!--About section-->
+    <section class="About" id="about">
+        <div class="sec3">
+            <h1 class="sec2"> <span>ABOUT</span> ME </h1>
+            <div class="About1">
+                <h3> <span> Name : </span> JAGRIT SAHU </h3>
+                <h3> <span> Age : </span> 19 </h3>
+                <h3> <span> Qualification : </span> B.TECH </h3>
+                <h3> <span> Post : </span> Back end developer </h3>
+                <h3> <span> Language : </span> Hindi </h3>
+                <a href="#"><button class="btn"> Download CV</button></a>
+            </div>
+        </div>
+        <div class="experience">
+
+            <div class="box">
+                <span>2+</span>
+                <h3>Years of experience</h3>
+            </div>
+
+            <div class="box">
+                <span>100+</span>
+                <h3>Project completed</h3>
+            </div>
+
+            <div class="box">
+                <span>430+</span>
+                <h3>Happy clients</h3>
+            </div>
+
+            <div class="box">
+                <span>12+</span>
+                <h3>Awards won</h3>
+            </div>
+        </div>
+
+        <!--Education section-->
+    </section>
+
+    <section class="Education" id="education">
+        <div class="sec4">EDUCATION</div>
+        <div class="sec3">
+
+            <div class="box">
+                <span>2016</span>
+                <p>Learnt some basics of HTML.
+                    I was in 10th standard.
+                    i was studying at Kendriys Vidyalaya
+                </p>
+            </div>
+
+            <div class="box">
+                <span>2017</span>
+                <p>Secured 10 cgpa.
+                    Went to Mother's Public school for 11th.
+                    Learned some more about HTML.
+                </p>
+            </div>
+
+            <div class="box">
+                <span>2018</span>
+                <p>After completing HTML started learning CSS.
+                    I was in 12thy standard.
+                </p>
+            </div>
+
+            <div class="box">
+                <span>2019</span>
+                <p>Appeared 12th board and secured 86%.
+                    Learned some more about CSS.
+                    Appeared for JEE-MAIN.
+                </p>
+            </div>
+
+            <div class="box">
+                <span>2020</span>
+                <p>Went to NIT Rourkela in Ceramic engineering.
+                    Started learning React JS and Mongo DB.
+                </p>
+            </div>
+
+            <div class="box">
+                <span>2021</span>
+                <p>After completing first year with 8.8 CGPA started learning Node JS.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="Skills" id="skills">
+        <h3>SKILLS</h3>
+        <div class="sec5">
+            <span>HTML-</span>
+            <span>90%</span>
+        </div>
+
+        <div class="sec5">
+            <span>CSS-</span>
+            <span>85%</span>
+        </div>
+
+        <div class="sec5">
+            <span>JAVASCRIPT-</span>
+            <span>70%</span>
+        </div>
+
+        <div class="sec6">
+            <span>REACT JS-</span>
+            <span>60%</span>
+        </div>
+
+        <div class="sec6">
+            <span>NODE JS-</span>
+            <span>50%</span>
+        </div>
+
+
+        <div class="sec6">
+            <span>MONGO DB-</span>
+            <span>40%</span>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h1 class="heading"> <span>Contact</span> me </h1>
+
+        <div class="row">
+            <div class="content">
+                <h3 class="title">contact info</h3>
+                <div class="info">
+                    <h3> <i class="fas fa-envelope"></i> jagritsahu40@gmail.com </h3>
+                    <h3> <i class="fas fa-phone"></i> 6371443154 </h3>
+                    <h3> <i class="fas fa-phone"></i> 7538919073 </h3>
+                    <h3> <i class="fas fa-map-marker-alt"></i> Mayurbhanj, odisha </h3>
+                </div>
+            </div>
+
+            <form action="">
+                <input type="text" placeholder="name" class="box">
+                <input type="email" placeholder="email" class="box">
+                <input type="text" placeholder="project" class="box">
+                <textarea cols="30" rows="10" class="box message" placeholder="message"></textarea>
+                <button type="submit" class="btn"> SEND <i class="fas fa-paper-plane"></i> </button>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
